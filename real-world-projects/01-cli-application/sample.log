@@ -1,0 +1,15 @@
+2026-08-03T10:00:01 INFO  Application started
+2026-08-03T10:00:05 DEBUG Cache warmed with 128 entries
+2026-08-03T10:01:12 WARN  Slow query detected: /api/orders took 820ms
+2026-08-03T10:01:15 INFO  Order created: 1001
+2026-08-03T10:01:18 ERROR Payment failed for order 1001
+2026-08-03T10:01:19 ERROR Payment failed for order 1001
+2026-08-03T10:02:00 INFO  Order created: 1002
+2026-08-03T10:02:05 INFO  Payment succeeded for order 1002
+2026-08-03T10:03:11 ERROR Payment failed for order 1003
+2026-08-03T10:03:40 WARN  Slow query detected: /api/orders took 820ms
+2026-08-03T10:04:00 FATAL Database connection pool exhausted
+2026-08-03T10:04:01 ERROR Payment failed for order 1001
+2026-08-03T11:00:00 INFO  Health check OK
+not a valid log line at all
+2026-08-03 11:15:30,421 ERROR Disk almost full on /var/log
