@@ -1,0 +1,19 @@
+---
+description: This repo targets Java 25 (JDK 25 LTS) exclusively
+alwaysApply: true
+---
+
+# Java 25 Mastery
+
+- Target **Java / JDK 25** (LTS). Do not write examples or notes for older defaults (8, 11, 17, 21) unless contrasting history.
+- Prefer **finalized Java 25** features over previews. Mark preview/incubator/experimental APIs clearly when used.
+- Obey [`MASTER_INSTRUCTION.md`](../../MASTER_INSTRUCTION.md) and `principal-engineer-mastery.mdc` (Principal depth, no destruction of good content).
+- For Java 25 release study, use folder `16-java-25-features/` (language, API, JVM, migrations, LTS evolution 8→25).
+- Language notes and demos should reflect modern Java 25 style where relevant, including:
+  - Compact source files and instance main methods (JEP 512)
+  - Module import declarations (JEP 511)
+  - Flexible constructor bodies (JEP 513)
+  - Scoped values (JEP 506) when covering concurrency
+- Tooling examples use JDK 25: `javac --release 25`, `java`, `jshell`, `jlink`, `jpackage`.
+- Folder layout: topic-wise `.md` files per chapter folder; one `interview.md` per chapter where present. Do not mass-rename existing folders.
+- Keep explanations accurate to the Java 25 platform (bytecode, HotSpot JVM, JPMS, modern runtime — not a separate classic JRE story as the default).

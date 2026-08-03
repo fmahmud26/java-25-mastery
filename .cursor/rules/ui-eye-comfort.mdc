@@ -1,0 +1,88 @@
+---
+description: Eye-comfort UI — Inter, soft background/text colors, standard type scale (always)
+alwaysApply: true
+---
+
+# UI — Eye Comfort (Always)
+
+For **any** UI, HTML, CSS, docs site, preview page, or generated styles in this project, follow these defaults without asking. Do not revert to pure white/black, tiny text, or non-Inter body fonts.
+
+## Font — Inter
+
+- Primary: `Inter, system-ui, sans-serif`
+- Load Inter (Google Fonts, fontsource, or `@font-face`)
+- Do not use Roboto, Arial, or system-only stacks as the primary face
+
+## Colors — eye comfort
+
+Avoid pure `#FFFFFF` backgrounds and pure `#000000` text (and the reverse on dark UI). Use soft neutrals:
+
+| Token | Light (default) | Dark (if dark UI) |
+|-------|-----------------|-------------------|
+| Background | `#F5F5F4` | `#1C1C1E` |
+| Surface / cards | `#FAFAF9` | `#252528` |
+| Text primary | `#292524` | `#E7E5E4` |
+| Text muted | `#57534E` | `#A8A29E` |
+| Border | `#E7E5E4` | `#3F3F46` |
+| Link / accent | `#1D4ED8` | `#93C5FD` |
+
+```css
+/* ✅ GOOD */
+:root {
+  color-scheme: light;
+  --bg: #f5f5f4;
+  --text: #292524;
+  --text-muted: #57534e;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* ❌ BAD */
+background: #fff;
+color: #000;
+font-size: 12px;
+```
+
+## Type scale — standard sizes
+
+| Role | Size | Line height |
+|------|------|-------------|
+| Body | **16px** (`1rem`) | **1.6** |
+| Small / secondary | 14px (`0.875rem`) | 1.5 |
+| H3 | 1.25rem (20px) | 1.4 |
+| H2 | 1.5rem (24px) | 1.35 |
+| H1 | 1.875rem (30px) | 1.3 |
+| Code | 0.875rem–1rem | 1.5 |
+
+- Default body text is **16px** — never ship UI body at 12–13px
+- Comfortable measure: ~65–75 characters per line where practical
+- Font weight: 400 body, 500–600 labels/headings (not ultra-thin)
+
+## Tailwind defaults (when used)
+
+```js
+theme: {
+  extend: {
+    fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] },
+    colors: {
+      canvas: "#F5F5F4",
+      ink: "#292524",
+      muted: "#57534E",
+    },
+    fontSize: {
+      base: ["1rem", { lineHeight: "1.6" }],
+    },
+  },
+}
+```
+
+Body: `bg-canvas text-ink font-sans text-base antialiased`.
+
+## Scope
+
+Applies to web UI, landing pages, HTML previews, and any styled docs. Plain `.md` study notes need no CSS unless a preview/site is added — then these tokens apply.
+
+## Never ask again
+
+These are project defaults. Apply automatically on every UI/styling task.

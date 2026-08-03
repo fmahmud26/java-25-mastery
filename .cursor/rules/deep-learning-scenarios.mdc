@@ -1,0 +1,26 @@
+---
+description: Deep learning pass — scenario-driven teaching, expand existing docs, no cheat-sheet notes
+alwaysApply: true
+---
+
+# Deep Learning & Real-World Scenarios
+
+Full guide: [`DEEP_LEARNING_STANDARD.md`](../../DEEP_LEARNING_STANDARD.md). Complements `principal-engineer-mastery.mdc`.
+
+## When editing topic notes
+
+- **Expand the authoritative file** — do not create a second HashMap/VT doc with the same facts.
+- **Stop writing cheat sheets.** Teach: problem → naive → break → concept → internals → production → failure → interview → Principal decision.
+- Every major topic needs **≥2 production scenarios**, **when NOT to use**, failure investigation, and Interviewer Mode (Basic→Principal + follow-up).
+- Internals: Level 1 simple → Level 2 technical → Level 3 JVM → Level 4 production.
+- Nuance: never “HashMap is always O(1)” / “VT are faster” / “parallel streams improve performance” without workload caveats.
+- Illustrative numbers must be labeled **Illustrative example.**
+- Cross-link the chain (e.g. HashMap → equals/hashCode → CHM → memory → GC → performance).
+
+## Scenario lab
+
+Investigation exercises live in `scenario-lab/` — do not spoil root cause before the investigation section.
+
+## Priority order for deep passes
+
+Collections → Concurrency → Virtual Threads → JVM → GC → Streams → Performance → then other chapters.
