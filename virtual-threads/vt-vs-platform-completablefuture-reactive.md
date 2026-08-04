@@ -60,4 +60,4 @@ Don’t rewrite stable WebFlux to VT “for fashion.” Do adopt VT for new bloc
 
 ### Related
 
-[virtual-threads-vs-reactive-programming.md](./virtual-threads-vs-reactive-programming.md) · [principal-architecture-decisions.md](./principal-architecture-decisions.md)
+[../reactive-programming/vs-virtual-threads.md](../reactive-programming/vs-virtual-threads.md) (canonical) · [virtual-threads-vs-reactive-programming.md](./virtual-threads-vs-reactive-programming.md) · [principal-architecture-decisions.md](./principal-architecture-decisions.md)

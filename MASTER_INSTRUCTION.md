@@ -72,6 +72,7 @@ Do **not** blindly renumber or recreate folders. Map work onto existing names:
 | Clean code / SOLID | `modern-java-engineering/` + `interview-prep/oop-solid/` |
 | Coding interviews | `coding-problems/` |
 | LLD / System design | `low-level-design/`, `system-design/` (incl. `distributed-systems/`) |
+| Reactive (streams / vs VT) | `reactive-programming/` |
 | Question bank | `java-interview-questions/` |
 | Interview prep (tracks/formats primary) | `interview-prep/` |
 | Incident investigations | `scenario-lab/` |

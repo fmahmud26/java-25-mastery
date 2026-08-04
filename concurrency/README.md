@@ -8,8 +8,8 @@ Shared-memory concurrency on the JVM: threads, the memory model, locks, atomics,
 
 1. Foundations: [process-vs-thread](./process-vs-thread.md) → [platform-threads](./platform-threads.md) → [thread-lifecycle](./thread-lifecycle.md) → [creating-threads](./creating-threads.md)  
 2. Tasks: [runnable](./runnable.md) · [callable](./callable.md) · [future](./future.md) · [executor-service](./executor-service.md)  
-3. JMM: [java-memory-model](./java-memory-model.md) → [happens-before](./happens-before.md) → [visibility](./visibility.md) · [atomicity](./atomicity.md) · [ordering](./ordering.md)  
-4. Sync tools: [synchronization](./synchronization.md) · [synchronized](./synchronized.md) · [monitor](./monitor.md) · [volatile](./volatile.md) · [cas](./cas.md) · [atomic-variables](./atomic-variables.md)  
+3. JMM: [java-memory-model](./java-memory-model.md) → [happens-before](./happens-before.md) → [visibility](./visibility.md) · [atomicity](./atomicity.md) · [ordering](./ordering.md) · [volatile](./volatile.md) · [varhandles](./varhandles.md) · [cas](./cas.md)  
+4. Sync tools: [synchronization](./synchronization.md) · [synchronized](./synchronized.md) · [monitor](./monitor.md) · [atomic-variables](./atomic-variables.md)  
 5. Locks: [reentrantlock](./reentrantlock.md) · [readwritelock](./readwritelock.md) · [stampedlock](./stampedlock.md)  
 6. Coordinators: [countdownlatch](./countdownlatch.md) · [cyclicbarrier](./cyclicbarrier.md) · [semaphore](./semaphore.md) · [phaser](./phaser.md)  
 7. Structures: [concurrenthashmap](./concurrenthashmap.md) · [blockingqueue](./blockingqueue.md) · [concurrent-queues](./concurrent-queues.md) · [copyonwritearraylist](./copyonwritearraylist.md)  

@@ -81,4 +81,4 @@ Each case: symptoms → evidence → likely causes → actions. **No guaranteed 
 
 ### Related
 
-[diagnostics.md](./diagnostics.md) · [trade-offs.md](./trade-offs.md) · [full-gc.md](./full-gc.md) · [heap-sizing.md](./heap-sizing.md)
+[diagnostics.md](./diagnostics.md) · [trade-offs.md](./trade-offs.md) · [full-gc.md](./full-gc.md) · [heap-sizing.md](./heap-sizing.md) · [../performance-engineering/jvm-observability.md](../performance-engineering/jvm-observability.md) · [../scenario-lab/03-high-gc.md](../scenario-lab/03-high-gc.md)

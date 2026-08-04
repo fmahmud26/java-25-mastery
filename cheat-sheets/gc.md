@@ -35,4 +35,6 @@ Bank: [gc questions](../java-interview-questions/gc/)
 
 ## Logs / evidence
 
-GC logs + JFR — [gc-logs](../garbage-collection/gc-logs.md) · [diagnostics](../garbage-collection/diagnostics.md)
+GC logs + JFR — [gc-logs](../garbage-collection/gc-logs.md) · [diagnostics](../garbage-collection/diagnostics.md) · [jvm-observability](../performance-engineering/jvm-observability.md)
+
+Bakeoff protocol: [trade-offs](../garbage-collection/trade-offs.md)

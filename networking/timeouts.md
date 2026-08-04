@@ -36,10 +36,20 @@ Caller p99 SLO 300ms
 
 Timeouts must be **shorter** than caller’s remaining budget or you cause retry storms upstream.
 
-## Failures
+## Production Scenario — generous timeouts
 
-[timeout-failures.md](./timeout-failures.md)
+All clients set 30s “to be safe.” Dependency hangs; 10k VTs blocked; caller SLO 500ms already missed at t=0.5s but resources held for 30s.
+
+**Fix:** tight budgets + fail fast + bulkhead; see [timeout-failures.md](./timeout-failures.md).
+
+## Failure Semantics
+
+Timeout ≠ “server did nothing.” Especially for POST — see [partial-failure.md](./partial-failure.md).
+
+## When Not to Set Ultra-Aggressive Timeouts
+
+Known long-running authorized jobs (exports) — use async job pattern, not a 50ms HTTP budget on a 2-minute report.
 
 ### Related
 
-[retries.md](./retries.md) · [latency.md](./latency.md) · [http-client.md](./http-client.md)
+[retries.md](./retries.md) · [latency.md](./latency.md) · [http-client.md](./http-client.md) · [retry-storms.md](./retry-storms.md)

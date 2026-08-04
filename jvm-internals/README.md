@@ -20,7 +20,9 @@ How HotSpot runs your program: load bytecode, manage memory, interpret, JIT-comp
 2. Bytes & load: [bytecode](./bytecode.md) → [class-loading](./class-loading.md) → [class-loaders](./class-loaders.md)  
 3. Memory: [heap](./heap.md) · [stack](./stack.md) · [metaspace](./metaspace.md) · [pc-register](./pc-register.md) · [native-method-stack](./native-method-stack.md)  
 4. Speed: [interpreter](./interpreter.md) → [jit-compiler](./jit-compiler.md) → [tiered-compilation](./tiered-compilation.md) → [escape-analysis](./escape-analysis.md) → [deoptimization](./deoptimization.md) → [safepoints](./safepoints.md)  
-5. Ops: [diagnostic-tools](./diagnostic-tools.md) · [incidents](./incidents.md) · [interview](./interview.md)
+5. Ops: [diagnostic-tools](./diagnostic-tools.md) · [incidents](./incidents.md) · [interview](./interview.md)  
+
+Unified production loop (JFR + metrics + traces): [../performance-engineering/jvm-observability.md](../performance-engineering/jvm-observability.md).
 
 ## One-line PE rule
 

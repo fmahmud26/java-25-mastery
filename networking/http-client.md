@@ -31,22 +31,45 @@ if (res.statusCode() >= 500) {
 }
 ```
 
-## Async
+## Async vs Virtual Threads
 
 ```java
 client.sendAsync(req, HttpResponse.BodyHandlers.ofString())
         .thenApply(HttpResponse::body);
 ```
 
-On virtual threads, blocking `send` is often simpler for request-scoped work.
+On virtual threads, blocking `send` is often simpler for request-scoped work. Prefer one model per service — mixing CF chains and VT without need raises debug cost. NIO/async background: [../io-nio/asynchronous-io.md](../io-nio/asynchronous-io.md).
 
 ## Production
 
 - **One** (or few) long-lived `HttpClient` instances per process — connection reuse  
-- Per-request timeout always  
+- Per-request timeout always; connect timeout on the client  
 - Propagate `traceparent` / correlation headers  
-- Bound body sizes; stream large payloads  
+- Bound body sizes; stream large payloads (`BodyHandlers.ofInputStream`)  
+- Separate clients per downstream for bulkheads when limits differ  
+
+## Production Scenario — per-request client
+
+Team constructs `HttpClient.newHttpClient()` inside a handler. TLS handshakes explode; ephemeral ports rise; p99 tanks.
+
+**Fix:** singleton/shared client; see [connection-pooling.md](./connection-pooling.md).
+
+## Failure Modes
+
+| Symptom | Likely |
+|---------|--------|
+| `HttpTimeoutException` | Request timeout / slow peer |
+| Connect timeout | Peer down, DNS, SYN drop, TLS stall |
+| `IOException` mid-body | Reset / partial response — treat carefully |
+
+## When Not to Use Raw HttpClient Alone
+
+Need rich middleware (auth refresh, hedged requests) — wrap with a small client facade; or use a mature stack — still apply the same timeout/pool rules.
+
+## Principal Perspective
+
+HttpClient is fine for production Java 25 services when timeouts, pooling, and retries are **designed**, not left as defaults.
 
 ### Related
 
-[timeouts.md](./timeouts.md) · [connection-pooling.md](./connection-pooling.md) · [java-net-http.md](./java-net-http.md)
+[timeouts.md](./timeouts.md) · [connection-pooling.md](./connection-pooling.md) · [java-net-http.md](./java-net-http.md) · [retries.md](./retries.md)

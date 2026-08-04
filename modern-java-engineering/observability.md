@@ -29,7 +29,7 @@ Cardinality (userId as label) can melt Prometheus. High sampling in prod costs C
 
 ## PE Decision
 
-Observability is part of the **definition of done** for new services — not a follow-up ticket.
+Observability is part of the **definition of done** for new services — not a follow-up ticket. For JVM-specific investigation loops, see [../performance-engineering/jvm-observability.md](../performance-engineering/jvm-observability.md).
 
 ### Related
 

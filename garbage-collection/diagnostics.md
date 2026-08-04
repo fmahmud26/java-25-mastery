@@ -49,6 +49,8 @@ When after-GC heap rises or OOM: dump → MAT dominator / path-to-root. That is 
 4. If occupancy climbing → histogram / dump  
 5. Only then change flags/collector  
 
+Unified JVM loop (metrics + traces + JFR): [../performance-engineering/jvm-observability.md](../performance-engineering/jvm-observability.md). Scenario drill: [../scenario-lab/03-high-gc.md](../scenario-lab/03-high-gc.md).
+
 ### Related
 
-[incidents.md](./incidents.md) · [pause-time.md](./pause-time.md) · [allocation-rate.md](./allocation-rate.md)
+[incidents.md](./incidents.md) · [pause-time.md](./pause-time.md) · [allocation-rate.md](./allocation-rate.md) · [trade-offs.md](./trade-offs.md)

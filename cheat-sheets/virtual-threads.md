@@ -45,3 +45,7 @@ ThreadLocal leaks amplify at VT scale → prefer Scoped Values (Java 25 final JE
 ## Structured concurrency
 
 **Preview** on Java 25 (JEP 505) — [java-25 cheat](./java-25.md) · [bank](../java-interview-questions/virtual-threads/q04-structured-concurrency-preview.md)
+
+## vs Reactive
+
+CRUD + blocking I/O → VT. Streaming + pipeline backpressure → reactive. Canonical: [../reactive-programming/vs-virtual-threads.md](../reactive-programming/vs-virtual-threads.md).

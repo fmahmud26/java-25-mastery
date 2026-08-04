@@ -22,7 +22,7 @@ Request → Virtual Thread (cheap)
 2. Style: [thread-per-request-model](./thread-per-request-model.md) → [blocking-io](./blocking-io.md) → [thread-pools-with-vt](./thread-pools-with-vt.md) → [executors-new-virtual-thread-per-task-executor](./executors-new-virtual-thread-per-task-executor.md)  
 3. Hazards: [thread-pinning](./thread-pinning.md) · [synchronization-and-vt](./synchronization-and-vt.md) · [memory](./memory.md)  
 4. Limits: [database-connection-pools](./database-connection-pools.md) · [http-clients](./http-clients.md) · [downstream-limitations](./downstream-limitations.md) · [when-vt-do-not-help](./when-vt-do-not-help.md)  
-5. Compare: [vt-vs-platform-completablefuture-reactive](./vt-vs-platform-completablefuture-reactive.md) · [virtual-threads-vs-reactive-programming](./virtual-threads-vs-reactive-programming.md)  
+5. Compare: [vt-vs-platform-completablefuture-reactive](./vt-vs-platform-completablefuture-reactive.md) · [virtual-threads-vs-reactive-programming](./virtual-threads-vs-reactive-programming.md) · **canonical:** [../reactive-programming/vs-virtual-threads.md](../reactive-programming/vs-virtual-threads.md)  
 6. Practice: [scenarios](./scenarios.md) · [experiments](./experiments.md) · [principal-architecture-decisions](./principal-architecture-decisions.md) · [interview](./interview.md)
 
 ## One-line PE rule

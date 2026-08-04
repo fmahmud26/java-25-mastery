@@ -12,7 +12,7 @@ If something here conflicts with a chapter, **trust the chapter**.
 | [collections.md](./collections.md) | [collections](../collections/) |
 | [streams.md](./streams.md) | [stream-api](../stream-api/) |
 | [concurrency.md](./concurrency.md) | [concurrency](../concurrency/) |
-| [virtual-threads.md](./virtual-threads.md) | [virtual-threads](../virtual-threads/) |
+| [virtual-threads.md](./virtual-threads.md) | [virtual-threads](../virtual-threads/) · [reactive-programming](../reactive-programming/) |
 | [jvm.md](./jvm.md) | [jvm-internals](../jvm-internals/) |
 | [gc.md](./gc.md) | [garbage-collection](../garbage-collection/) |
 | [memory.md](./memory.md) | [memory-management](../memory-management/) |

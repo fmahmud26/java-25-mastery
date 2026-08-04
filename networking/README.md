@@ -20,7 +20,9 @@ Service A                Service B
 1. Foundations: [tcp](./tcp.md) · [dns](./dns.md) · [sockets](./socket.md) · [http](./http.md) · [https](./https.md) · [tls](./tls.md)  
 2. Java: [http-client](./http-client.md) · [java-net-http](./java-net-http.md) · [connection-pooling](./connection-pooling.md) · [timeouts](./timeouts.md) · [retries](./retries.md)  
 3. Failures: [latency](./latency.md) · [connection-failure](./connection-failure.md) · [timeout-failures](./timeout-failures.md) · [retry-storms](./retry-storms.md) · [connection-exhaustion](./connection-exhaustion.md) · [partial-failure](./partial-failure.md)  
-4. Practice: [scenarios](./scenarios.md) · [java-backend](./java-backend.md) · [principal-decisions](./principal-decisions.md) · [interview](./interview.md) · [practical/](./practical/)
+4. Practice: [scenarios](./scenarios.md) · [java-backend](./java-backend.md) · [principal-decisions](./principal-decisions.md) · [interview](./interview.md) · [practical/](./practical/)  
+
+Async I/O contrast: [../io-nio/asynchronous-io.md](../io-nio/asynchronous-io.md). Streaming backpressure: [../reactive-programming/](../reactive-programming/).
 
 ## One-line PE rule
 

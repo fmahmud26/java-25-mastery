@@ -10,6 +10,6 @@
 | jmap | Legacy dump/histo | [jmap.md](./jmap.md) |
 | VisualVM | Dev sampling / dumps | [visualvm.md](./visualvm.md) |
 | jconsole | JMX GUI | [jconsole.md](./jconsole.md) |
-| async-profiler | CPU/alloc/wall (external) | Use alongside JFR when needed |
+| async-profiler | CPU/alloc/wall (external) | [async-profiler.md](./async-profiler.md) |
 
-**Prod default:** `jcmd` + JFR + JMC (+ dumps on retention issues).
+**Prod default:** `jcmd` + JFR + JMC (+ dumps on retention issues). Pair with async-profiler for fast flame graphs. Unified loop: [../jvm-observability.md](../jvm-observability.md).

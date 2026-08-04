@@ -25,13 +25,14 @@ Depth: [metrics-vocabulary](../performance-engineering/metrics-vocabulary.md) ·
 
 | Question | Tool |
 |----------|------|
-| Where is CPU time? | JFR / JMC CPU |
-| Where are allocations? | JFR allocation |
+| Where is CPU time? | JFR / JMC / [async-profiler](../performance-engineering/tools/async-profiler.md) |
+| Where are allocations? | JFR allocation / async-profiler alloc |
 | Threads stuck? | jstack / thread analysis |
 | Microbench API change? | **JMH** (not raw `nanoTime`) |
 | Retained memory? | Heap dump |
+| Unified incident loop? | [jvm-observability](../performance-engineering/jvm-observability.md) |
 
-[tools/](../performance-engineering/tools/) · [jfr](../performance-engineering/jfr.md)
+[tools/](../performance-engineering/tools/) · [jfr](../performance-engineering/jfr.md) · [low-latency](../performance-engineering/low-latency-architecture.md) · [high-throughput](../performance-engineering/high-throughput-systems.md)
 
 ## Interview anti-patterns (bank)
 

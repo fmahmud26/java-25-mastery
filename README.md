@@ -107,7 +107,7 @@ Topic chapters use one `.md` per concept; many include `interview.md`. Practical
 |------|---------|
 | Language | [java-fundamentals](./java-fundamentals/), [oop](./oop/), [modern-java](./modern-java/), [16-java-25-features](./16-java-25-features/) |
 | APIs | [collections](./collections/), [generics](./generics/), [functional-programming](./functional-programming/), [stream-api](./stream-api/), [exception-handling](./exception-handling/), [io-nio](./io-nio/), [date-time](./date-time/) |
-| Runtime | [concurrency](./concurrency/), [virtual-threads](./virtual-threads/), [jvm-internals](./jvm-internals/), [memory-management](./memory-management/), [garbage-collection](./garbage-collection/), [performance-engineering](./performance-engineering/) |
+| Runtime | [concurrency](./concurrency/), [virtual-threads](./virtual-threads/), [reactive-programming](./reactive-programming/), [jvm-internals](./jvm-internals/), [memory-management](./memory-management/), [garbage-collection](./garbage-collection/), [performance-engineering](./performance-engineering/) |
 | Design | [design-patterns](./design-patterns/), [modern-java-engineering](./modern-java-engineering/), [low-level-design](./low-level-design/), [system-design](./system-design/) |
 | Platform | [jdbc](./jdbc/), [networking](./networking/), [security](./security/), [testing](./testing/), [build-tools](./build-tools/) |
 | Interview & proof | [interview-prep](./interview-prep/), [scenario-lab](./scenario-lab/), [java-interview-questions](./java-interview-questions/), [coding-problems](./coding-problems/), [real-world-projects](./real-world-projects/), [principal-engineer](./principal-engineer/), [experiments](./experiments/), [cheat-sheets](./cheat-sheets/) |
@@ -172,13 +172,14 @@ Use [senior-priorities](./interview-prep/senior-priorities.md) as the checklist.
 | [exception-handling](./exception-handling/) | Checked/unchecked, TWR, suppressed |
 | [io-nio](./io-nio/) | NIO.2 + practical CLIs |
 | [date-time](./date-time/) | `java.time` |
-| [concurrency](./concurrency/) | JMM, locks, executors, concurrent collections ⭐ |
+| [concurrency](./concurrency/) | JMM, VarHandle, locks, executors, concurrent collections ⭐ |
 | [virtual-threads](./virtual-threads/) | Loom, pinning, vs reactive ⭐⭐⭐ |
+| [reactive-programming](./reactive-programming/) | Reactive Streams, backpressure, vs VT ⭐ |
 | [jvm-internals](./jvm-internals/) | Loaders, JIT, memory areas ⭐⭐⭐ |
 | [memory-management](./memory-management/) | Refs, dumps, leak analysis |
 | [garbage-collection](./garbage-collection/) | G1/ZGC/Shenandoah ⭐⭐⭐ |
 | [16-java-25-features](./16-java-25-features/) | Language/API/JVM + LTS evolution ⭐⭐⭐ |
-| [performance-engineering](./performance-engineering/) | JFR, JMH, jcmd, profiling |
+| [performance-engineering](./performance-engineering/) | JFR, profiling, low-latency / high-throughput, JVM observability |
 | [design-patterns](./design-patterns/) | GoF + Java idioms |
 | [jdbc](./jdbc/) | Transactions, pooling, injection/N+1 |
 | [networking](./networking/) | TCP/HTTP/HttpClient |

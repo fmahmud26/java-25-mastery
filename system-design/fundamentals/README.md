@@ -16,7 +16,7 @@ Core levers for Principal system design interviews.
 | Databases | [databases.md](./databases.md) |
 | Consistency | [consistency.md](./consistency.md) |
 | CAP | [cap-theorem.md](./cap-theorem.md) |
-| Observability | [observability.md](./observability.md) |
+| Observability | [observability.md](./observability.md) · JVM loop [../../performance-engineering/jvm-observability.md](../../performance-engineering/jvm-observability.md) |
 | Disaster recovery | [disaster-recovery.md](./disaster-recovery.md) |
 
 Distributed mechanics (queues, retries, CB, …): [../distributed-systems/](../distributed-systems/).

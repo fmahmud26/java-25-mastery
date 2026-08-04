@@ -37,4 +37,4 @@ Profiles change → possible deoptimization
 
 ## Tools (point to chapters)
 
-JFR / `jcmd` / thread dumps / heap dumps — see [performance cheat](./performance.md) and [jvm-internals](../jvm-internals/).
+JFR / `jcmd` / thread dumps / heap dumps / async-profiler — see [performance cheat](./performance.md), [jvm-observability](../performance-engineering/jvm-observability.md), and [jvm-internals](../jvm-internals/).

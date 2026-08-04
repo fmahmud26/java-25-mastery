@@ -6,6 +6,7 @@
 
 - **Happens-before** → visibility + ordering (not just mutual exclusion).  
 - Tools establishing HB: monitor unlock→lock, volatile write→read, thread start/join, etc. — [happens-before.md](../concurrency/happens-before.md)  
+- Library-level modes: [VarHandle](../concurrency/varhandles.md) (plain / acquire / release / volatile / CAS)  
 - Data race = conflicting accesses without HB.
 
 ## Tool chooser
@@ -13,7 +14,8 @@
 | Need | Tool | Source |
 |------|------|--------|
 | Mutual exclusion | `synchronized` / `ReentrantLock` | [synchronized](../concurrency/synchronized.md) · [reentrantlock](../concurrency/reentrantlock.md) |
-| Flag / safe publish | `volatile` | [volatile](../concurrency/volatile.md) |
+| Flag / safe publish | `volatile` / `AtomicReference` | [volatile](../concurrency/volatile.md) |
+| Ordered publish (libs) | `VarHandle` acquire/release | [varhandles](../concurrency/varhandles.md) |
 | Counter | `Atomic*` / `LongAdder` | [atomic-variables](../concurrency/atomic-variables.md) |
 | Concurrent map | `ConcurrentHashMap` atomic ops | [concurrenthashmap](../concurrency/concurrenthashmap.md) |
 | Work queue | `BlockingQueue` | [blockingqueue](../concurrency/blockingqueue.md) |

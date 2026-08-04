@@ -1,6 +1,6 @@
 # Virtual Threads vs Reactive Programming
 
-Deepen the comparison for Java 25 architecture reviews.
+Short VT-side comparison. **Canonical depth:** [reactive-programming/vs-virtual-threads.md](../reactive-programming/vs-virtual-threads.md).
 
 ## Why Reactive Existed
 
@@ -33,4 +33,4 @@ Teams rewrite everything to VT and lose backpressure; or keep reactive wrappers 
 
 ### Related
 
-[vt-vs-platform-completablefuture-reactive.md](./vt-vs-platform-completablefuture-reactive.md) · [when-vt-do-not-help.md](./when-vt-do-not-help.md)
+[../reactive-programming/](../reactive-programming/) · [vt-vs-platform-completablefuture-reactive.md](./vt-vs-platform-completablefuture-reactive.md) · [when-vt-do-not-help.md](./when-vt-do-not-help.md)

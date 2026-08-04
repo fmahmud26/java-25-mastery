@@ -14,11 +14,12 @@ Details: [scientific-method.md](./scientific-method.md)
 
 ## Study path
 
-1. Mindset: [scientific-method](./scientific-method.md) · [profiling](./profiling.md) · [metrics-vocabulary](./metrics-vocabulary.md)  
+1. Mindset: [scientific-method](./scientific-method.md) · [profiling](./profiling.md) · [metrics-vocabulary](./metrics-vocabulary.md) · [jvm-observability](./jvm-observability.md)  
 2. Metrics: [throughput](./throughput.md) · [latency](./latency.md) · [tail-latency](./tail-latency.md) · [gc-pressure](./gc-pressure.md) · [contention](./contention.md)  
-3. Tools: [jfr](./jfr.md) · [jmc](./jmc.md) · [jcmd](./jcmd.md) · [jstack](./jstack.md) · [heap-dumps](./heap-dumps.md) · [jmh](./tools/jmh.md) · [tools/](./tools/)  
-4. Profiling modes: [cpu-profiling](./cpu-profiling.md) · [allocation-profiling](./allocation-profiling.md) · [memory-profiling](./memory-profiling.md) · [thread-analysis](./thread-analysis.md)  
-5. Practice: [benchmarking](./benchmarking.md) · [experiments/](./experiments/) · [incidents](./incidents.md) · [interview](./interview.md)
+3. Architecture: [low-latency-architecture](./low-latency-architecture.md) · [high-throughput-systems](./high-throughput-systems.md)  
+4. Tools: [jfr](./jfr.md) · [jmc](./jmc.md) · [jcmd](./jcmd.md) · [jstack](./jstack.md) · [heap-dumps](./heap-dumps.md) · [jmh](./tools/jmh.md) · [async-profiler](./tools/async-profiler.md) · [tools/](./tools/)  
+5. Profiling modes: [cpu-profiling](./cpu-profiling.md) · [allocation-profiling](./allocation-profiling.md) · [memory-profiling](./memory-profiling.md) · [thread-analysis](./thread-analysis.md)  
+6. Practice: [benchmarking](./benchmarking.md) · [experiments/](./experiments/) · [incidents](./incidents.md) · [interview](./interview.md)
 
 ## One-line PE rule
 
